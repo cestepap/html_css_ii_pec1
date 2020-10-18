@@ -1,0 +1,62 @@
+$main-color: orange;
+
+body {
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 0;
+  max-width: 1200px;
+  font-size: 18px;
+}
+
+hr {
+  background-color: $main-color;
+  height: 5px;
+  border: none;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+.personal-data,
+.experience-data,
+.education-data,
+.others-data {
+  margin: 20px 40px;
+  padding: 10px 0;
+}
+
+.personal-data-block,
+.experience-data-block,
+.education-data-block {
+  display: flex;
+}
+
+.personal-data-info {
+  flex: 4;
+}
+
+.personal-data-info p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.personal-data-photo img {
+  width: 150px;
+  border: 1px solid #ccc;
+}
+
+.experience-date,
+.education-date {
+  flex: 2;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.experience-description,
+.education-description {
+  flex: 4;
+  color: #ccc;
+}
