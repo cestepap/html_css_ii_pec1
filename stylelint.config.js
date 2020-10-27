@@ -18,8 +18,6 @@ module.exports = {
           "variants",
           "screen",
           "use",
-          "function",
-          "return",
         ],
       },
     ],
