@@ -2,12 +2,6 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 @import "colors";
 
-// @function addFontSizeValue($increment) {
-//   $defaultSize: 18;
-//   $newSize: $defaultSize + $increment;
-//   @return $newSize;
-// }
-
 body {
   margin: 0 auto;
   padding: 0;
@@ -37,9 +31,16 @@ p {
   margin: 5px 0;
 }
 
+@function addfontaizevalue($increment) {
+  $defaultSize: 18;
+  $newSize: $defaultSize + $increment;
+
+  @return $newSize;
+}
+
 h1,
 h2 {
-  font-size: 20px;
+  font-size: addfontaizevalue(2) + px;
   font-weight: 800;
   background-color: $h1h2-color;
 }
@@ -160,14 +161,14 @@ h2 {
 .right-data-header {
   margin: 0;
 
-  .right-data-header__photo img {
+  & .right-data-header__photo img {
     width: 150px;
     border-radius: 20px;
     margin: 40px;
     box-shadow: 0 0 20px 10px $font-color;
   }
 
-  .right-data-header__aboutme {
+  & .right-data-header__aboutme {
     font-style: italic;
     line-height: 28px;
     letter-spacing: 2px;
